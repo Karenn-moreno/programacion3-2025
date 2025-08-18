@@ -1,0 +1,14 @@
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\bin\Debug\net8.0\Ejemplo1.exe
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\bin\Debug\net8.0\Ejemplo1.deps.json
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\bin\Debug\net8.0\Ejemplo1.runtimeconfig.json
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\bin\Debug\net8.0\Ejemplo1.dll
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\bin\Debug\net8.0\Ejemplo1.pdb
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.AssemblyInfoInputs.cache
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.AssemblyInfo.cs
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.csproj.CoreCompileInputs.cache
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.dll
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\refint\Ejemplo1.dll
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.pdb
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\Ejemplo1.genruntimeconfig.cache
+C:\Users\OEM\Desktop\Curso C#\PrimerosEjemplos\Ejemplo1\obj\Debug\net8.0\ref\Ejemplo1.dll

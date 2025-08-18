@@ -1,0 +1,11 @@
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\bin\Debug\Ejemplo1.exe.config
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\bin\Debug\Ejemplo1.exe
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\bin\Debug\Ejemplo1.pdb
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.csproj.AssemblyReference.cache
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.Properties.Resources.resources
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.csproj.GenerateResource.cache
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.csproj.CoreCompileInputs.cache
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.exe
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.pdb
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.exe.config
+C:\Users\OEM\Desktop\Curso C#\PrimeraAppWinForm\Ejemplo1\obj\Debug\Ejemplo1.Form1.resources
