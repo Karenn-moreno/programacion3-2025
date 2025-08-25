@@ -14,6 +14,10 @@ namespace Ejemplo1
         private float sueldo;
         private string nombre;
 
+        public Persona(string nombre)
+        {
+            this.nombre = nombre;
+        }
         public void setEdad(int e)
         {
             edad = e;
@@ -23,6 +27,16 @@ namespace Ejemplo1
           return edad;
         }
 
-        //
+        //Metodos
+        public string Saludar()
+        {
+            return "Hola soy .." + nombre;
+        }
+
+        //sobrecarga de metodos
+        public string Saludar(string personaje)
+        {
+            return "Hola"+personaje+" , soy " +nombre;
+        }
     }
 }

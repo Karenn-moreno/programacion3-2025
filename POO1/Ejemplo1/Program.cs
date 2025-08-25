@@ -18,17 +18,25 @@ namespace Ejemplo1
             float[] sueldos=new float[10];
             string[]nombres=new string[10];
             */
-            Persona p1 = new Persona(); // instancio crea obj
+            Persona p1 = new Persona("Karen"); // instancio crea obj
             p1.setEdad(20);
-
+            Console.WriteLine(p1.Saludar());
+            Console.WriteLine(p1.Saludar("Eddie"));
             Console.WriteLine("La edad de la persona es:"+p1.getEdad());
            
 
             /*----------Ejemplo 2------------*/
-            Botella b1=new Botella();//instancio obj
-            b1.Capacidad = 200;
-            int algo = b1.Capacidad;
+            Botella b1=new Botella("Rojo","Plastico");//creo objeto , constructor por defecto de la clase object
+           // b1.Capacidad = 200;
+           //int algo = b1.Capacidad;
 
+            Console.WriteLine("Capacidad botella:"+b1.Capacidad);
+            Console.WriteLine("Capacidad Actual de la botella es:"+b1.CantidadActual);
+            b1.recargar(20);
+            Console.WriteLine("Luego de recargar, la Cantidad Actual de la botella es:" + b1.CantidadActual);
+            b1.recargar();
+            Console.WriteLine("Luego de recargar, la Cantidad Actual de la botella es:" + b1.CantidadActual);
+            //Botella b2 = new Botella();
 
             /*---------Ejemplo 3 ----------*/
 
