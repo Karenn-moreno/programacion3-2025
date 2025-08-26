@@ -9,7 +9,7 @@ namespace Ejercicio1
     internal class PortonAutomatico
     {
         // Constructor vacío: inicia cerrado
-        public PortonAutomatico() 
+        public PortonAutomatico()
         {
             Apertura = 0;
         }
@@ -41,7 +41,71 @@ namespace Ejercicio1
             get { return Apertura == 100; }
         }
 
-    }
+        //PARTE (A) METODOS
 
-   
+        public void Abrir()
+        {
+            if (Apertura == 100)
+                Console.WriteLine("Ya está abierto al 100%");
+            else
+                Apertura = 100;
+        }
+
+        public void Cerrar()
+        {
+            if (Apertura == 0)
+                Console.WriteLine("Ya está completamente cerrado");
+            else
+                Apertura = 0;
+        }
+
+        public void MostrarEstado()
+        {
+            if (EstaCerrado)
+                Console.WriteLine("Cerrado");
+            else if (EstaAbiertoCompleto)
+                Console.WriteLine("Abierto total (100%)");
+            else
+                Console.WriteLine($"Abierto parcial ({Apertura}%)");
+        }
+
+        //PARTE B 
+        public void Abrir(int porcentaje)
+        {
+            if (porcentaje < 1 || porcentaje > 99)
+                Console.WriteLine("Porcentaje inválido (1–99)");
+            else
+                Apertura = porcentaje;
+        }
+
+        public void AbrirPeatonal()
+        {
+            Apertura = 20;
+        }
+
+
+        // --- PARTE C ---
+        public void Stop()
+        {
+            Console.WriteLine("Movimiento detenido");
+        }
+
+        public bool Toggle()
+        {
+            if (EstaCerrado)
+            {
+                Apertura = 100;
+                return true;
+            }
+            else
+            {
+                Apertura = 0;
+                return false;
+            }
+        }
+
+
+
+    }
 }
+
