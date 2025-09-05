@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-   abstract internal class Persona
+   sealed internal class Persona
     {
         public string Nombre { get; set; }
         public string Apellido { get; set; }
