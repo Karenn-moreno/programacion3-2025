@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia3
 {
-    internal class Pez
+    internal class Pez :Animal
     {
     }
 }
