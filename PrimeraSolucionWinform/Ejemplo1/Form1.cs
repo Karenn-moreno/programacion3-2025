@@ -16,5 +16,22 @@ namespace Ejemplo1
         {
             InitializeComponent();
         }
+
+        private void btnSaludar_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Hola Mundo");
+            string texto = txtNombre.Text;
+            lblSaludo.Text= "Hola" +texto;  
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Bienvenido!");
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           // MessageBox.Show("Gracias por visitarnos");
+        }
     }
 }

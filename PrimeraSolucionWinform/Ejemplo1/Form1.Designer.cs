@@ -29,32 +29,70 @@
         private void InitializeComponent()
         {
             this.btnSaludar = new System.Windows.Forms.Button();
+            this.lblSaludo = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSaludar
             // 
-            this.btnSaludar.Location = new System.Drawing.Point(350, 205);
+            this.btnSaludar.Location = new System.Drawing.Point(368, 226);
             this.btnSaludar.Name = "btnSaludar";
-            this.btnSaludar.Size = new System.Drawing.Size(75, 23);
+            this.btnSaludar.Size = new System.Drawing.Size(83, 30);
             this.btnSaludar.TabIndex = 0;
             this.btnSaludar.Text = "Saludar";
             this.btnSaludar.UseVisualStyleBackColor = true;
+            this.btnSaludar.Click += new System.EventHandler(this.btnSaludar_Click);
+            // 
+            // lblSaludo
+            // 
+            this.lblSaludo.AutoSize = true;
+            this.lblSaludo.Location = new System.Drawing.Point(391, 289);
+            this.lblSaludo.Name = "lblSaludo";
+            this.lblSaludo.Size = new System.Drawing.Size(0, 13);
+            this.lblSaludo.TabIndex = 1;
+            this.lblSaludo.Click += new System.EventHandler(this.btnSaludar_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(374, 164);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(120, 20);
+            this.txtNombre.TabIndex = 2;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(310, 171);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 491);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblSaludo);
             this.Controls.Add(this.btnSaludar);
             this.Name = "Form1";
             this.Text = "Primera App";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnSaludar;
+        private System.Windows.Forms.Label lblSaludo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblNombre;
     }
 }
 
