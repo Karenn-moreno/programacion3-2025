@@ -8,5 +8,6 @@ namespace Herencia3
 {
     internal interface Flyable
     {
+        string volar(); //firma metodo
     }
 }
