@@ -64,8 +64,9 @@
             this.abrirToolStripMenuItem,
             this.guardarToolStripMenuItem});
             this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
+            this.archivosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
             this.archivosToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.archivosToolStripMenuItem.Text = "Archivos ";
+            this.archivosToolStripMenuItem.Text = "&Archivos ";
             // 
             // opcionesToolStripMenuItem
             // 
@@ -73,7 +74,7 @@
             this.perfilPersonaToolStripMenuItem});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
+            this.opcionesToolStripMenuItem.Text = "O&pciones";
             // 
             // aboutToolStripMenuItem
             // 
@@ -96,7 +97,8 @@
             // perfilPersonaToolStripMenuItem
             // 
             this.perfilPersonaToolStripMenuItem.Name = "perfilPersonaToolStripMenuItem";
-            this.perfilPersonaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilPersonaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
+            this.perfilPersonaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.perfilPersonaToolStripMenuItem.Text = "Perfil Persona";
             this.perfilPersonaToolStripMenuItem.Click += new System.EventHandler(this.perfilPersonaToolStripMenuItem_Click);
             // 
