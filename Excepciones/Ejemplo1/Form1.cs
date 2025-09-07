@@ -19,30 +19,47 @@ namespace Ejemplo1
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            int a, b, r;
+            int resultado;
 
+            try
+            {
+                resultado = calcular();//llamado a la funcion
+                lblResultado.Text = "=" + resultado;
+                
+            }
+            catch (Exception ex) //tantos cath como execepciones quiera
+            {
+                MessageBox.Show("Error al ejecutar.. Contacte al dev");
+            }
+            finally //lo que  quiero que si o si se ejecute indefente al resto 
+            {
+                //instrucciones 
+                //operacion sensible ...
+
+
+            }
+        }
+
+
+        private int calcular() //puede devolver resultado o lanzar excepcion
+        {
+            int a, b, r;
             try
             {
                 a = int.Parse(txt1.Text);
                 b = int.Parse(txt2.Text);
                 r = a / b;
 
-                lblResultado.Text = "=" + r;
+                return r;
             }
-            catch (FormatException ex)  //tantos cath como execepciones quiera
+            catch (Exception ex)
             {
-
-                MessageBox.Show("Error solo cargar numeros");
-            }
-            catch (DivideByZeroException ex)
-            {
-                MessageBox.Show("Error no se puede dividir por cero");
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show("Error al ejecutar.. Contacte al dev");
+                //guardar registro de error en archivo
+                throw ex;
             }
         }
+
+
 
         private void lblResultado_Click(object sender, EventArgs e)
         {
