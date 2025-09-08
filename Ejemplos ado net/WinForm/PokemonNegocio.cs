@@ -18,7 +18,7 @@ namespace WinForm
 
         try 
 	{	        
-           conexion.ConnectionString= "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=false; user=sa;password=eddie;";
+           conexion.ConnectionString= "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true;";
            comando.CommandType= System.Data.CommandType.Text;
            comando.CommandText = "select Numero,Nombre,Descripcion from POKEMONS";
            comando.Connection = conexion;
