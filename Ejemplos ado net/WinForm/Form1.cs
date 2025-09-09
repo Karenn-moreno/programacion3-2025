@@ -12,6 +12,8 @@ namespace WinForm
 {
     public partial class Form1 : Form
     {
+
+        private List<Pokemon> listaPokemon;//
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +22,28 @@ namespace WinForm
         private void Form1_Load(object sender, EventArgs e)
         {
             PokemonNegocio negocio= new PokemonNegocio();
-            dgvPokemons.DataSource = negocio.listar();
+            listaPokemon = negocio.listar();//
+            dgvPokemons.DataSource = listaPokemon;//
+            cargarImagen(listaPokemon[0].UrlImagen);
+        }
+
+        private void dgvPokemons_SelectionChanged(object sender, EventArgs e)
+        {
+           Pokemon Seleccionado=(Pokemon) dgvPokemons.CurrentRow.DataBoundItem;//fila actual "pokemon"
+            cargarImagen(Seleccionado.UrlImagen);
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                picturePokemon.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                picturePokemon.Load("https://redthread.uoregon.edu/files/original/affd16fd5264cab9197da4cd1a996f820e601ee4.png");
+   
+            }
         }
     }
 }

@@ -20,7 +20,7 @@ namespace WinForm
 	{	        
            conexion.ConnectionString= "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true;";
            comando.CommandType= System.Data.CommandType.Text;
-           comando.CommandText = "select Numero,Nombre,Descripcion from POKEMONS";
+           comando.CommandText = "select Numero,Nombre,Descripcion, UrlImagen from POKEMONS";
            comando.Connection = conexion;
 
                 conexion.Open();
@@ -32,7 +32,7 @@ namespace WinForm
                     aux.Numero = lector.GetInt32(0); //le agrego el valor del indice virtual
                     aux.Nombre = (string)lector["Nombre"];//aclaro que es string
                     aux.Descripcion = (string)lector["Descripcion"];
-
+                    aux.UrlImagen = (string)lector["UrlImagen"];
                     lista.Add(aux);
                 
                 }
