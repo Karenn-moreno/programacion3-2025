@@ -11,7 +11,14 @@ namespace ejemplo1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void BtnAceptar_Click(object sender, EventArgs e) 
+        {
+            string nombre= txtNombre.Text;
+            LblSaludo.Text = "hola" + nombre;
+            Response.Redirect("ejemploASPX.aspx", false); //objeto.redirecciono - navegar a otra pantalla ,False (para no cancelar el flujo de redireccion)
         }
     }
 }
